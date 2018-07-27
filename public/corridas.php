@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="css/index.css">
-        <title>FastCar - Passageiros</title>
+        <title>FastCar - Corridas</title>
     </head>
 
     <body>
-        <?php include 'inc/navbar-passageiros.php'?>
+        <?php include 'inc/navbar-corridas.php'?>
         
         <div class="container">
             <?php include 'inc/showcase.php'?>
@@ -26,7 +26,7 @@
                             unset($_SESSION['pesquisa']);
                             unset($_SESSION['options']);
                         } else {
-                            include 'inc/content-passageiros.php';
+                            include 'inc/content-corridas.php';
                         }
                 
                     ?>
@@ -34,7 +34,7 @@
                 <div class="col-md-4 col-lg-4">
                     <?php
                         if (isset($_SESSION['email'])) {
-                            include 'inc/sidebar-logged-passageiro.php';
+                            include 'inc/sidebar-logged-corrida.php';
                         } else {
                             include 'inc/sidebar-login.php';
                         }
