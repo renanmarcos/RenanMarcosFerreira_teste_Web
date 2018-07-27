@@ -17,4 +17,10 @@ Exemplo no Linux:
 sudo echo "DATABASE_URL=postgres://admin:123@localhost:5432/fastcar" > ~/.bashrc
 ```
 
+Seu banco de dados precisa estar no formato de data europeu para a inserção funcionar corretamente. Faça isso no PostgreSQL com o seguinte comando:
+
+```sql
+ALTER DATABASE nome_do_banco SET datestyle TO 'ISO, european'
+```
+
 Este projeto pode ser acessado online: https://fast-car.herokuapp.com/
