@@ -14,7 +14,7 @@ Crie um novo banco de dados dentro do PostgreSQL com o nome de sua preferência 
 Exemplo no Linux:
 
 ```bash
-sudo echo "DATABASE_URL=postgres://admin:123@localhost:5432/fastcar" > ~/.bashrc
+sudo echo "DATABASE_URL=postgres://admin:123@localhost:5432/fastcar" >> ~/.bashrc
 ```
 
 Seu banco de dados precisa estar no formato de data europeu para a inserção funcionar corretamente. Faça isso no PostgreSQL com o seguinte comando:
